@@ -131,7 +131,7 @@ func Run(options StreamOptions, results chan<- FeedResult) {
 
 				}
 			}
-			//fmt.Fprintf(os.Stderr, "\r%d/%d remaining\n", resp.Rate.Remaining, resp.Rate.Limit)
+			fmt.Fprintf(os.Stderr, "\r%d/%d remaining\n", resp.Rate.Remaining, resp.Rate.Limit)
 			if resp.NextPage == 0 {
 				break
 			}
